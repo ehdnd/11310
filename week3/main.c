@@ -158,7 +158,7 @@ int main(void)
 
 */
 
-/* #2-8 p.62
+/* #3-8 p.62
 
 #include <stdio.h>
 
@@ -175,7 +175,7 @@ int main(void)
 
 */
 
-/* #2-9 p.64
+/* #3-9 p.64
 
 #include <stdio.h>
 
@@ -191,7 +191,7 @@ int main(void)
 
 */
 
-/* #2-10 p.65
+/* #3-10 p.65
 
 #include <stdio.h>
 #include <string.h>
