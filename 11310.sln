@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "week2__과제", "week2__과
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "week3", "week3\week3.vcxproj", "{FEF00173-754C-4946-A242-AC6C8BC96A38}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "week4", "week4\week4.vcxproj", "{5425E7AB-9D10-468E-8F02-CA01DFF5D955}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{FEF00173-754C-4946-A242-AC6C8BC96A38}.Release|x64.Build.0 = Release|x64
 		{FEF00173-754C-4946-A242-AC6C8BC96A38}.Release|x86.ActiveCfg = Release|Win32
 		{FEF00173-754C-4946-A242-AC6C8BC96A38}.Release|x86.Build.0 = Release|Win32
+		{5425E7AB-9D10-468E-8F02-CA01DFF5D955}.Debug|x64.ActiveCfg = Debug|x64
+		{5425E7AB-9D10-468E-8F02-CA01DFF5D955}.Debug|x64.Build.0 = Debug|x64
+		{5425E7AB-9D10-468E-8F02-CA01DFF5D955}.Debug|x86.ActiveCfg = Debug|Win32
+		{5425E7AB-9D10-468E-8F02-CA01DFF5D955}.Debug|x86.Build.0 = Debug|Win32
+		{5425E7AB-9D10-468E-8F02-CA01DFF5D955}.Release|x64.ActiveCfg = Release|x64
+		{5425E7AB-9D10-468E-8F02-CA01DFF5D955}.Release|x64.Build.0 = Release|x64
+		{5425E7AB-9D10-468E-8F02-CA01DFF5D955}.Release|x86.ActiveCfg = Release|Win32
+		{5425E7AB-9D10-468E-8F02-CA01DFF5D955}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
