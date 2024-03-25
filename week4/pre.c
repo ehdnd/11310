@@ -1,308 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
 
-////#3-8
-//
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	int income = 0;
-//	double tax;
-//	const double tax_rate = 0.12;
-//
-//	income = 456;
-//	tax = income * tax_rate;
-//	printf("세금은: %.1lf입니다.\n", tax);
-//
-//	return 0;
-//}
-
-
-////확인문제2
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	int a = 0;
-//
-//	a = a + 1;
-//	a = a + 2;
-//	a = a + 3;
-//	printf("a: %d", a);
-//
-//	return 0;
-//}
-//
-////확인문제3
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	int kor = 70;
-//	int eng = 80;
-//	int mat = 90;
-//
-//	int tot = kor + eng + mat;
-//	printf("국어: %d, 영어: %d, 수학: %d\n", kor, eng, mat);
-//	printf("총점: %d", tot);
-//
-//	return 0;
-//}
-
-
-////#3-9
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	int a;
-//
-//	scanf("%d", &a);
-//	printf("입력된 값: %d\n", a);
-//
-//	return 0;
-//}
-
-////#3-10
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	int age;
-//	double height;
-//
-//	printf("나이와 키를 입력하세요: ");
-//	scanf("%d%lf", &age, &height);
-//	printf("나이는 %d살, 키는 %.1fcm입니다.\n", age, height);
-//
-//	return 0;
-//}
-
-////#3-11
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	char grade;
-//	char name[20];
-//
-//	printf("학점 입력: ");
-//	scanf("%c", &grade);
-//	printf("이름 입력: ");
-//	scanf("%s", name);
-//	printf("%s의 학점은 %c입니다.\n", name, grade);
-//
-//	return 0;
-//}
-
-////확인문제2
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	char fruit[20];
-//	int cnt;
-//
-//	printf("좋아하는 과일: ");
-//	scanf("%s", fruit);
-//	printf("몇 개: ");
-//	scanf("%d", &cnt);
-//	printf("%s를 %d개 드립니다.", fruit, cnt);
-//
-//	return 0;
-//}
-
-////확인문제3
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	char ch;
-//
-//	printf("문자 입력: ");
-//	scanf("%c", &ch);
-//	printf("%c문자의 아스키 코드 값은 %d입니다.", ch, ch);
-//
-//	return 0;
-//}
-
-////#4-1
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	int a, b;
-//	int sum, sub, mul, inv;
-//
-//	a = 10;
-//	b = 20;
-//	sum = a + b;
-//	sub = a - b;
-//	mul = a * b;
-//	inv = -a;
-//
-//	printf("a의 값: %d, b의 값: %d\n", a, b);
-//	printf("덧셈: %d\n", sum);
-//	printf("뺄셈: %d\n", sub);
-//	printf("곱셈: %d\n", mul);
-//	printf("a의 음수 연산: %d\n", inv);
-//
-//	return 0;
-//}
-
-////#4-2
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	double apple;
-//	int banana;
-//	int orange;
-//
-//	apple = 5.0 / 2.0;
-//	banana = 5 / 2;
-//	orange = 5 % 2;
-//
-//	printf("apple: %.1f\n", apple);
-//	printf("banana: %d\n", banana);
-//	printf("orange: %d\n", orange);
-//
-//	return 0;
-//}
-
-////#4-3
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	int a = 10, b = 10;
-//
-//	++a;
-//	--b;
-//
-//	printf("a: %d\n", a);
-//	printf("b: %d\n", b);
-//
-//	return 0;
-//}
-
-////#4-4
-//#include <stdio.h>
-//
-//int main(void) {
-//	int a = 5, b = 5;
-//	int pre, post;
-//
-//	pre = (++a) * 3;
-//	post = (b++) * 3;
-//
-//	printf("초깃값: a = %d, b =%d\n", a, b);
-//	printf("전위형: (++a) * 3 = %d, (b++) * 3 = %d\n", pre, post);
-//
-//	return 0;
-//
-//}
-
-////#4-5
-//#include <stdio.h>
-//
-//int main(void) {
-//	int a = 10, b = 20, c = 10;
-//	int res;
-//
-//	res = (a > b);
-//	printf("a > b: %d\n", res);
-//	
-//	res = (a >= b);
-//	printf("a >= b: %d\n", res);
-//	
-//	res = (a < b);
-//	printf("a < b: %d\n", res);
-//	
-//	res = (a <= b);
-//	printf("a <= b: %d\n", res);
-//	
-//	res = (a <= c);
-//	printf("a <= c: %d\n", res);
-//	
-//	res = (a == b);
-//	printf("a == b: %d\n", res);
-//	
-//	res = (a != c);
-//	printf("a != b: %d\n", res);
-//
-//	return 0;
-//	}
-
-////#4-6
-//#include <stdio.h>
-//
-//int main(void) {
-//	int a = 30;
-//	int res;
-//
-//	res = (a > 10) && (a < 20);
-//	printf("(a > 10) && (a < 20): %d\n", res);
-//
-//	res = (a < 10) || (a > 20);
-//	printf("(a < 10) && (a > 20): %d\n", res);
-//	
-//
-//	res = !(a >= 30);
-//	printf("!(a >= 30): %d\n", res);
-//
-//	return 0;
-//}
-
-////#4-7
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	int a = 10, b = 20, res;
-//
-//	a + b;
-//	printf("%d + %d = %d\n", a, b, a + b);
-//
-//	res = a + b;
-//	printf("%d + %d = %d", a, b, res);
-//
-//	return 0;
-//}
-
-////확인문제1
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	double a = 4.0, b = 1.2;
-//
-//	printf("%.1lf + %.1lf = %.1lf\n", a, b, a + b);
-//	printf("%.1lf - %.1lf = %.1lf\n", a, b, a - b);
-//	printf("%.1lf * %.1lf = %.1lf\n", a, b, a * b);
-//	printf("%.1lf / %.1lf = %.1lf\n", a, b, a / b);
-//
-//	return 0;
-//}
-
-////확인문제2
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	int a, b, tot;
-//	double avg;
-//
-//	printf("두 과목의 점수: ");
-//	scanf("%d%d", &a, &b);
-//	tot = a + b;
-//	avg = tot / 2.0;
-//
-//	printf("평균: %.1lf", avg);
-//
-//	return 0;
-//}
-
 ////확인문제3
 //#include <stdio.h>
 //
@@ -641,4 +338,241 @@
 //	return 0;
 //}
 
-//#5-4
+////#5-4
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//	int a = 20, b = 10;
+//
+//	if (a > 10)
+//	{
+//		if (b >= 0)
+//		{
+//			b = 1;
+//		}
+//		else
+//		{
+//			b = -1;
+//		}
+//	}
+//
+//	printf("a: %d, b: %d\n", a, b);
+//
+//	return 0;
+//}
+
+////#5-5
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//	int a = 10, b = 20;
+//
+//	if (a < 0)
+//	{
+//		if (b > 0)
+//		{
+//			printf("ok");
+//		}
+//	}
+//	else
+//	{
+//		printf("ok");
+//	}
+//
+//	return 0;
+//}
+
+////#5-6
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//	int rank = 2, m = 0;
+//
+//	switch (rank)
+//	{
+//	case 1:
+//		m = 300;
+//		break;
+//	case 2:
+//		m = 200;
+//		break;
+//	case 3:
+//		m = 100;
+//		break;
+//	default:
+//		m = 10;
+//		break;
+//	}
+//
+//	printf("m: %d\n", m);
+//
+//	return 0;
+//}
+
+////확인문제2
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//	int n;
+//	printf("정수 입력: ");
+//	scanf("%d", &n);
+//	switch (n % 3)
+//	{
+//	case 0:
+//		printf("거짓");
+//		break;
+//
+//	default:
+//		printf("참");
+//		break;
+//	}
+//
+//	return 0;
+//}
+
+////확인문제3
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//	int age = 25, chest = 95;
+//	char size;
+//
+//	if (age < 20)
+//	{
+//		if (chest < 85) size = 'S';
+//		else if (chest < 95) size = 'M';
+//		else size = 'L';
+//	}
+//	else
+//	{
+//		if (chest < 90) size = 'S';
+//		else if (chest < 100) size = 'M';
+//		else size = 'L';
+//	}
+//
+//	printf("사이즈는 %c입니다. \n", size);
+//
+//	return 0;
+//}
+
+//도전실전예제 
+////////////////////////////
+
+////#6-1
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//	int a = 1;
+//
+//		while (a < 10)
+//		{
+//			a = a * 2;
+//		}
+//
+//		printf("a: %d\n", a);
+//
+//	return 0;
+//}
+
+////#6-2
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//	int a = 1;
+//	int i;
+//
+//	for (i = 0; i < 3; i++)
+//	{
+//		a = a * 2;
+//	}
+//	printf("a: %d\n", a);
+//
+//	return 0;
+//}
+
+////#6-3
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//	int a = 1;
+//
+//	do
+//	{
+//		a = a * 2;
+//	} while (a < 10);
+//	printf("a: %d\n", a);
+//
+//	return 0;
+//}
+
+////확인문제1
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//	int a;
+//	
+//	do
+//	{
+//		scanf("%d", &a);
+//	} while (a < 0);
+//
+//	return 0;
+//}
+
+////확인문제2
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//	int i;
+//
+//	for (i = 0; i < 5; i++)
+//	{
+//		printf("Be happy!\n");
+//	}
+//
+//	return 0;
+//}
+
+////확인문제3
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//	int i;
+//	for (i = 0; i < 10; i++)
+//	{
+//		printf("$");
+//	}
+//
+//	return 0;
+//}
+
+////#6-4
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//	int i, j;
+//
+//	for (i = 0; i < 3; i++)
+//	{
+//		for (j = 0; j < 5; j++)
+//		{
+//			printf("*");
+//		}
+//		printf("\n");
+//	}
+//
+//	return 0;
+//}
+

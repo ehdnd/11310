@@ -207,3 +207,180 @@
 //	return 0;
 //}
 
+////#4-1
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//	int a, b;
+//	int sum, sub, mul, inv;
+//
+//	a = 10;
+//	b = 20;
+//	sum = a + b;
+//	sub = a - b;
+//	mul = a * b;
+//	inv = -a;
+//
+//	printf("aÀÇ °ª: %d, bÀÇ °ª: %d\n", a, b);
+//	printf("µ¡¼À: %d\n", sum);
+//	printf("»¬¼À: %d\n", sub);
+//	printf("°ö¼À: %d\n", mul);
+//	printf("aÀÇ À½¼ö ¿¬»ê: %d\n", inv);
+//
+//	return 0;
+//}
+
+////#4-2
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//	double apple;
+//	int banana;
+//	int orange;
+//
+//	apple = 5.0 / 2.0;
+//	banana = 5 / 2;
+//	orange = 5 % 2;
+//
+//	printf("apple: %.1f\n", apple);
+//	printf("banana: %d\n", banana);
+//	printf("orange: %d\n", orange);
+//
+//	return 0;
+//}
+
+////#4-3
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//	int a = 10, b = 10;
+//
+//	++a;
+//	--b;
+//
+//	printf("a: %d\n", a);
+//	printf("b: %d\n", b);
+//
+//	return 0;
+//}
+
+////#4-4
+//#include <stdio.h>
+//
+//int main(void) {
+//	int a = 5, b = 5;
+//	int pre, post;
+//
+//	pre = (++a) * 3;
+//	post = (b++) * 3;
+//
+//	printf("ÃÊ±ê°ª: a = %d, b =%d\n", a, b);
+//	printf("ÀüÀ§Çü: (++a) * 3 = %d, (b++) * 3 = %d\n", pre, post);
+//
+//	return 0;
+//
+//}
+
+////#4-5
+//#include <stdio.h>
+//
+//int main(void) {
+//	int a = 10, b = 20, c = 10;
+//	int res;
+//
+//	res = (a > b);
+//	printf("a > b: %d\n", res);
+//	
+//	res = (a >= b);
+//	printf("a >= b: %d\n", res);
+//	
+//	res = (a < b);
+//	printf("a < b: %d\n", res);
+//	
+//	res = (a <= b);
+//	printf("a <= b: %d\n", res);
+//	
+//	res = (a <= c);
+//	printf("a <= c: %d\n", res);
+//	
+//	res = (a == b);
+//	printf("a == b: %d\n", res);
+//	
+//	res = (a != c);
+//	printf("a != b: %d\n", res);
+//
+//	return 0;
+//	}
+
+
+////#4-6
+//#include <stdio.h>
+//
+//int main(void) {
+//	int a = 30;
+//	int res;
+//
+//	res = (a > 10) && (a < 20);
+//	printf("(a > 10) && (a < 20): %d\n", res);
+//
+//	res = (a < 10) || (a > 20);
+//	printf("(a < 10) && (a > 20): %d\n", res);
+//	
+//
+//	res = !(a >= 30);
+//	printf("!(a >= 30): %d\n", res);
+//
+//	return 0;
+//}
+
+////#4-7
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//	int a = 10, b = 20, res;
+//
+//	a + b;
+//	printf("%d + %d = %d\n", a, b, a + b);
+//
+//	res = a + b;
+//	printf("%d + %d = %d", a, b, res);
+//
+//	return 0;
+//}
+
+////È®ÀÎ¹®Á¦1
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//	double a = 4.0, b = 1.2;
+//
+//	printf("%.1lf + %.1lf = %.1lf\n", a, b, a + b);
+//	printf("%.1lf - %.1lf = %.1lf\n", a, b, a - b);
+//	printf("%.1lf * %.1lf = %.1lf\n", a, b, a * b);
+//	printf("%.1lf / %.1lf = %.1lf\n", a, b, a / b);
+//
+//	return 0;
+//}
+
+////È®ÀÎ¹®Á¦2
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//	int a, b, tot;
+//	double avg;
+//
+//	printf("µÎ °ú¸ñÀÇ Á¡¼ö: ");
+//	scanf("%d%d", &a, &b);
+//	tot = a + b;
+//	avg = tot / 2.0;
+//
+//	printf("Æò±Õ: %.1lf", avg);
+//
+//	return 0;
+//}
