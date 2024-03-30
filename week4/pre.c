@@ -576,3 +576,102 @@
 //	return 0;
 //}
 
+////#6-5
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//	int i;
+//	int sum = 0;
+//
+//	for (i = 1; i <= 10; i++)
+//	{
+//		sum += i;
+//		if (sum > 30) break;
+//	}
+//	printf("누적한 값: %d\n", sum);
+//	printf("마지막으로 더한 값: %d\n", i);
+//
+//	return 0;
+//}
+
+////확인문제3
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//	int i, j;
+//
+//	for (i = 0; i < 5; i++)
+//	{
+//		for (j = 0; j < 5; j++)
+//		{
+//			if ((i == j) || (i + j == 4))
+//			{
+//				printf("*");
+//			}
+//			else
+//			{
+//				printf(" ");
+//			}
+//		}
+//		printf("\n");
+//	}
+//
+//	return 0;
+//}
+
+//도전실전예제
+
+
+////#7-1
+//#include <stdio.h>
+//
+//int sum(int x, int y);
+//
+//
+//int main(void)
+//{
+//	int a = 10, b = 20;
+//	int result;
+//
+//	result = sum(a, b);;
+//	printf("result: %d\n", result);
+//
+//	return 0;
+//}
+//
+//int sum(int x, int y)
+//{
+//	int temp;
+//
+//	temp = x + y;
+//
+//	return temp;
+//}
+
+////확인문제3
+//#include <stdio.h>
+//
+//double centi_to_meter(int centi);
+//
+//int main(void)
+//{
+//	double res;
+//
+//	res = centi_to_meter(187);
+//	printf("%.2lfm\n", res);
+//
+//	return 0;
+//}
+//
+//double centi_to_meter(int centi)
+//{
+//	double meter;
+//
+//	meter = centi / 100.0;
+//
+//	return meter;
+//}
+
+//
