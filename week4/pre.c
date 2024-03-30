@@ -674,4 +674,187 @@
 //	return meter;
 //}
 
+////#7-2
+//#include <stdio.h>
 //
+//int get_num(void);
+//
+//int main(void)
+//{
+//	int result;
+//
+//	result = get_num();
+//	printf("반환값: %d\n", result);
+//
+//	return 0;
+//}
+//
+//int get_num(void)
+//{
+//	int num;
+//
+//	printf("양수 입력: ");
+//	scanf("%d", &num);
+//
+//	return num;
+//}
+
+////#7-3
+//#include <stdio.h>
+//
+//void print_char(char ch, int count);
+//
+//int main(void)
+//{
+//	print_char('@', 5);
+//
+//	return 0;
+//}
+//
+//void print_char(char ch, int count)
+//{
+//	int i;
+//
+//	for (i = 0; i < count; i++)
+//	{
+//		printf("%c", ch);
+//	}
+//
+//	return;
+//}
+
+////#7-4
+//#include <stdio.h>
+//
+//void print_line(void);
+//
+//int main(void)
+//{
+//	print_line();
+//	printf("학번\t이름\t전공\t학점\n");
+//	print_line();
+//
+//	return 0;
+//}
+//
+//void print_line(void)
+//{
+//	int i;
+//
+//	for (i = 0; i < 50; i++)
+//	{
+//		printf("-");
+//	}
+//	printf("\n");
+//}
+
+////#7-5
+//#include <stdio.h>
+//
+//void fruit(void);
+//
+//int main(void)
+//{
+//	fruit();
+//
+//	return 0;
+//}
+//
+//void fruit(void)
+//{
+//	printf("apple\n");
+//	fruit();
+//}
+
+////#7-6
+//#include <stdio.h>
+//
+//void fruit(int count);
+//
+//int main(void)
+//{
+//	fruit(1);
+//
+//	return 0;
+//}
+//
+//void fruit(count)
+//{
+//	printf("apple\n");
+//	if (count == 3) return;
+//	fruit(count + 1);
+//	printf("jam\n");
+//}
+
+////확인문제2
+//#include <stdio.h>
+//
+//int sum(int num);
+//
+//int main(void)
+//{
+//	sum(10);
+//	sum(100);
+//
+//	return 0;
+//}
+//
+//int sum(int num)
+//{
+//	int i;
+//	int sum = 0;
+//
+//	for (i = 1; i <= num; i++)
+//	{
+//		sum += i;
+//	}
+//	printf("1부터 %d까지의 합은 %d입니다.\n", num, sum);
+//}
+
+////확인문제3
+//#include <stdio.h>
+//
+//int func(int n);
+//int poly(int n);
+//
+//int main(void)
+//{
+//	printf("%d\n", func(-3));
+//
+//	return 0;
+//}
+//
+//int func(int n)
+//{
+//	int res;
+//	res = poly(n);
+//	if (res >= 0) return res;
+//	else return -res;
+//}
+//
+//int poly(int n)
+//{
+//	return((2 * n * n) + (3 * n));
+//}
+
+//도전문제
+#include <stdio.h>
+
+int rec_func(int n);
+
+int main(void)
+{
+	int a, sum;
+
+	printf("정수 입력: ");
+	scanf("%d", &a);
+	sum = rec_func(a);
+	printf("합: %d", sum);
+
+	return 0;
+}
+
+int rec_func(int a)
+{
+
+}
