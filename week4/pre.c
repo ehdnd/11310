@@ -1,161 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
 
-////확인문제3
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	int kor = 3, eng = 5, mat = 4;
-//	int credits, res;
-//	double kscore = 3.8, escore = 4.4, mscore = 3.9;
-//	double grade;
-//
-//	credits = kor + eng + mat;
-//	grade = (kscore + escore + mscore) / 3;
-//
-//	res = (credits >= 10) && (grade >= 4.0);
-//	printf("%d", res);
-//
-//	return 0;
-//}
-
-////#4-8
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	int a = 20, b = 3;
-//	double res;
-//	
-//	res = ((double)a) / ((double)b);
-//	printf("a = %d, b = %d\n",a, b);
-//	printf("a / b 의 결과: %.1lf\n", res);
-//
-//	a = (int)res;
-//	printf("(int) %.1lf의 결과: %d\n", res, a);
-//
-//	return 0;
-//}
-
-////#4-9
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	int a = 10;
-//	double b = 3.4;
-//
-//	printf("int형 변수의 크기: %d\n", sizeof(a));
-//	printf("double형 변수의 크기: %d\n", sizeof(b));
-//	printf("정수형 상수의 크기: %d\n", sizeof(10));
-//	printf("수식의 결괏값의 크기: %d\n", sizeof(1.5 + 3.4));
-//	printf("char 자료형의 크기: %d\n", sizeof(char));
-//
-//	return 0;
-//}
-
-////#4-10
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	int a = 10, b = 20;
-//	int res = 2;
-//
-//	a += 20;
-//	res *= b + 10;
-//
-//	printf("a = %d, b = %d\n", a, b);
-//	printf("res = %d\n", res);
-//
-//	return 0;
-//}
-
-////#4-11
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	int a = 10, b = 20;
-//	int res;
-//
-//	res = (++a, ++b);
-//
-//	printf("a: %d, b: %d\n", a, b);
-//	printf("res: %d\n", res);
-//
-//	return 0;
-//}
-
-////#4-12
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	int a = 10, b = 20, res;
-//
-//	res = (a > b) ? a : b;
-//	printf("큰 값: %d\n", res);
-//
-//	return 0;
-//}
-
-////#4-13
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	int a = 10;
-//	int b = 12;
-//
-//	printf("a & b: %d\n", a & b);
-//	printf("a ^ b: %d\n", a ^ b);
-//	printf("a | b: %d\n", a | b);
-//	printf("~a: %d\n", ~a);
-//	printf("a << 1: %d\n", a << 1);
-//	printf("a >> 2: %d\n", a >> 2);
-//
-//
-//	return 0;
-//}
-
-////#4-14
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	int a = 10, b = 5;
-//	int res;
-//
-//	res = a / b * 2;
-//	printf("res = %d\n", res);
-//
-//	res = ++a * 3;
-//	printf("res = %d\n", res);
-//
-//	res = a > b && a != 5;
-//	printf("res = %d\n", res);
-//
-//	res = a % 3 == 0;
-//	printf("res = %d\n", res);
-//
-//	return 0;
-//}
-
-////확인문제1
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	int res;
-//
-//	res = sizeof(short) > sizeof(long);
-//
-//	printf("%s\n", (res == 1) ? "short" : "long");
-//
-//	return 0;
-//}
-
 ////확인문제2
 //#include <stdio.h>
 //
@@ -837,24 +681,24 @@
 //	return((2 * n * n) + (3 * n));
 //}
 
-//도전문제
-#include <stdio.h>
-
-int rec_func(int n);
-
-int main(void)
-{
-	int a, sum;
-
-	printf("정수 입력: ");
-	scanf("%d", &a);
-	sum = rec_func(a);
-	printf("합: %d", sum);
-
-	return 0;
-}
-
-int rec_func(int a)
-{
-
-}
+////도전문제
+//#include <stdio.h>
+//
+//int rec_func(int n);
+//
+//int main(void)
+//{
+//	int a, sum;
+//
+//	printf("정수 입력: ");
+//	scanf("%d", &a);
+//	sum = rec_func(a);
+//	printf("합: %d", sum);
+//
+//	return 0;
+//}
+//
+//int rec_func(int a)
+//{
+//
+//}
