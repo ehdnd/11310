@@ -1,40 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
 
-////확인문제2
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	int seats = 70, audience = 65;
-//	double rate;
-//
-//	rate = (double)audience / (double)seats * 100;
-//	printf("입장률: %.1lf%%\n", rate);
-//
-//	return 0;
-//}
-
-////확인문제3
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	int hour, min, sec;
-//	double time = 3.76;
-//
-//	hour = (int)time;
-//	time -= hour;
-//	time *= 60.0;
-//	min = (int)time;
-//	time -= min;
-//	time *= 60.0;
-//	sec = (int)time;
-//
-//	printf("3.76시간은 %d시간 %d분 %d초입니다.", hour, min, sec);
-//
-//	return 0;
-//}
-
 ////도전실전예제
 //#include <stdio.h>
 //
@@ -70,45 +35,6 @@
 //
 //	((bmi >= 20.0) && (bmi < 25.0)) ? printf("표준입니다\n") : printf("체중관리가 필요합니다\n");
 //
-//
-//	return 0;
-//}
-
-////#5-1
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	int a = 20;
-//	int b = 0;
-//
-//	if (a > 10)
-//	{
-//		b = a;
-//	}
-//
-//	printf("a: %d, b: %d\n", a, b);
-//
-//	return 0;
-//}
-
-////#5-2
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	int a = 10;
-//
-//	if (a >= 0)
-//	{
-//		a = 1;
-//	}
-//	else
-//	{
-//		a = -1;
-//	}
-//
-//	printf("a: %d\n", a);
 //
 //	return 0;
 //}
