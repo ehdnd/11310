@@ -441,3 +441,143 @@
 //
 //	return 0;
 //}
+
+////#예제6-12
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//	int num1, num2, hap, cha, gob;
+//	double na;
+//	char op;
+//
+//	printf("정수 2개와 연산자 입력(예> 8 + 5): ");
+//
+//	scanf("%d %c %d", &num1, &op, &num2);
+//
+//	switch (op)
+//	{
+//	case '+':
+//		hap = num1 + num2;
+//		printf("%d %c %d = %d\n", num1, op, num2, hap);
+//		break;
+//
+//	case '-':
+//		cha = num1 - num2;
+//		printf("%d %c %d = %d\n", num1, op, num2, cha);
+//		break;
+//
+//	case '*':
+//		gob = num1 * num2;
+//		printf("%d %c %d = %d\n", num1, op, num2, gob);
+//		break;
+//
+//	case '/':
+//		na = (float)num1 / num2;
+//		printf("%d %c %d = %f\n", num1, op, num2, na);
+//		break;
+//
+//	default:
+//		printf("%d %c %d 연산은 허용하지 않는다.\n", num1, op, num2);
+//		printf("프로그램 다시시작");
+//		break;
+//	}
+//
+//	return 0;
+//}
+
+////#추가예제6-10
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//	int year, month, day;
+//
+//	printf("연도와 월 입력 (예> 2035 08): ");
+//	scanf("%d %d", &year, &month);
+//
+//	if (month > 12 || month < 1)
+//	{
+//		printf("%d월은 허용안됨\n", month);
+//		printf("프로그램 다시시작");
+//	}
+//	else
+//	{
+//		switch (month)
+//		{
+//		case 2:
+//			if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0))
+//			{
+//				printf("윤년");
+//				day = 29;
+//			}
+//			else
+//			{
+//				printf("평년");
+//				day = 28;
+//			}
+//			break;
+//		
+//		case 4:
+//		case 6:
+//		case 9:
+//		case 11:
+//			printf("평년");
+//			day = 30;
+//			break;
+//
+//		default:
+//			printf("평년");
+//			day = 31;
+//		}
+//		printf(": %d년 %02d월은 %d일까지 있습니다.\n", year, month, day);
+//	}
+//
+//	return 0;
+//}
+
+////#추가도전문제
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//	int keynum, result;
+//
+//	printf("정수 입력: ");
+//	scanf("%d", &keynum);
+//
+//	result = keynum % 2;
+//
+//	if (result != 0)
+//		printf("입력한 %d은(는) \"홀수\"입니다.\n", keynum);
+//	else
+//		printf("입력한 %d은(는) \"짝수\"입니다.", keynum);
+//
+//	return 0;
+//}
+
+////추가도전문제2
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//	int input, check;
+//
+//	printf("정수 입력: ");
+//	scanf("%d", &input);
+//
+//	check = input % 3;
+//
+//	switch (check)
+//	{
+//	case 0:
+//		printf("입력한 %d는 3의 배수 입니다.");
+//		break;
+//
+//	default:
+//		printf("입력한 %d는 3의 배수가 아닙니다.\n", input);
+//		break;
+//	}
+//
+//	return 0;
+//}
