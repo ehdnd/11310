@@ -187,7 +187,7 @@
 //	return 0;
 //}
 
-////확인문제1
+////#6 확인문제1
 //#include <stdio.h>
 //
 //int main(void)
@@ -202,7 +202,7 @@
 //	return 0;
 //}
 
-////확인문제2
+////#6 확인문제2
 //#include <stdio.h>
 //
 //int main(void)
@@ -217,7 +217,7 @@
 //	return 0;
 //}
 
-////확인문제3
+////#6 확인문제3
 //#include <stdio.h>
 //
 //int main(void)
@@ -269,7 +269,7 @@
 //	return 0;
 //}
 
-////확인문제3
+////#6-2확인문제3
 //#include <stdio.h>
 //
 //int main(void)
@@ -295,7 +295,118 @@
 //	return 0;
 //}
 
-//도전실전예제
+
+////#6-3도전실전예제
+
+
+////한 정수 판정 - 아닌듯
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//	int a, i;
+//
+//	printf("정수 입력: ");
+//	scanf("%d", &a);
+//
+//	for (i = 2; i < a; i++) {
+//
+//		if ((a % i) == 0)
+//		{
+//			a = 0;
+//			break;
+//		}
+//	}
+//	if (a != 0) printf("%5d", a);
+// 
+// return 0;
+//}
+
+///한 정수 판정 2 - 이건가
+
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//	int a, i;
+//
+//	scanf("%d", &a);
+//
+//	for (i = 2; i < a; i++)
+//	{
+//		if ((a % i) == 0) break;
+//	}
+//
+//	if (i == a)
+//	{
+//		printf("%5d", a);
+//	}
+//
+//	return 0;
+//}
+
+
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//	int input_num, every_num, i;
+//
+//	printf("2 이상의 정수를 입력하세요: ");
+//	scanf("%d", &input_num);
+//
+//	for (every_num = 2; every_num < input_num; every_num++)
+//	{
+//		for (i = 2; i < every_num; i++)
+//		{
+//			if ((every_num % i) == 0) break;		
+//		}
+//
+//		if (i == every_num)
+//		{
+//			printf("%5d", every_num);
+//		}
+//	}
+//	return 0;
+//}
+
+
+/////#6-2도전실전예제 - 해답
+
+//#include <stdio.h>
+//
+//int main(void) {
+//    int num;
+//    int i, j;
+//    int pn;
+//    int cnt = 0;
+//
+//    printf("2이상의 정수를 입력하세요 : ");
+//    scanf("%d", &num);
+//
+//    for (i = 2; i <= num; i++) 
+//    {
+//        pn = 1;
+//        for (j = 2; j < i; j++) 
+//        {
+//            if ((i % j) == 0) 
+//            {
+//                pn = 0;
+//                break;
+//            }
+//        }
+//        if (pn == 1) 
+//        {
+//            printf("%5d", i);
+//            cnt++;
+//            if ((cnt % 5) == 0) 
+//            {
+//                printf("\n");
+//            }
+//        }
+//    }
+//    return 0;
+//}
 
 
 ////#7-1
@@ -743,12 +854,12 @@
 //	return 0;
 //}
 
-//도전실전예제
-#include <stdio.h>
-
-int main(void)
-{
-
-
-	return 0;
-}
+////도전실전예제
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//
+//
+//	return 0;
+//}
