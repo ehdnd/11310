@@ -39,6 +39,8 @@
 //	return 0;
 //}
 
+///////////////////////////////////////////////////
+
 ////#5-4
 //#include <stdio.h>
 //
@@ -85,170 +87,11 @@
 //	return 0;
 //}
 
+//////////////////////////////////////////////
 
-////확인문제2
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	int n;
-//	printf("정수 입력: ");
-//	scanf("%d", &n);
-//	switch (n % 3)
-//	{
-//	case 0:
-//		printf("거짓");
-//		break;
-//
-//	default:
-//		printf("참");
-//		break;
-//	}
-//
-//	return 0;
-//}
+//#5-2도전실전예제 
 
-////확인문제3
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	int age = 25, chest = 95;
-//	char size;
-//
-//	if (age < 20)
-//	{
-//		if (chest < 85) size = 'S';
-//		else if (chest < 95) size = 'M';
-//		else size = 'L';
-//	}
-//	else
-//	{
-//		if (chest < 90) size = 'S';
-//		else if (chest < 100) size = 'M';
-//		else size = 'L';
-//	}
-//
-//	printf("사이즈는 %c입니다. \n", size);
-//
-//	return 0;
-//}
-
-//도전실전예제 
 ////////////////////////////
-
-////#6-1
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	int a = 1;
-//
-//		while (a < 10)
-//		{
-//			a = a * 2;
-//		}
-//
-//		printf("a: %d\n", a);
-//
-//	return 0;
-//}
-
-////#6-2
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	int a = 1;
-//	int i;
-//
-//	for (i = 0; i < 3; i++)
-//	{
-//		a = a * 2;
-//	}
-//	printf("a: %d\n", a);
-//
-//	return 0;
-//}
-
-////#6-3
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	int a = 1;
-//
-//	do
-//	{
-//		a = a * 2;
-//	} while (a < 10);
-//	printf("a: %d\n", a);
-//
-//	return 0;
-//}
-
-////#6 확인문제1
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	int a;
-//	
-//	do
-//	{
-//		scanf("%d", &a);
-//	} while (a < 0);
-//
-//	return 0;
-//}
-
-////#6 확인문제2
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	int i;
-//
-//	for (i = 0; i < 5; i++)
-//	{
-//		printf("Be happy!\n");
-//	}
-//
-//	return 0;
-//}
-
-////#6 확인문제3
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	int i;
-//	for (i = 0; i < 10; i++)
-//	{
-//		printf("$");
-//	}
-//
-//	return 0;
-//}
-
-////#6-4
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	int i, j;
-//
-//	for (i = 0; i < 3; i++)
-//	{
-//		for (j = 0; j < 5; j++)
-//		{
-//			printf("*");
-//		}
-//		printf("\n");
-//	}
-//
-//	return 0;
-//}
 
 ////#6-5
 //#include <stdio.h>

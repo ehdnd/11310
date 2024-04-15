@@ -15,19 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="etc1.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="etc2.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="etc3.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="etc4.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="etc5.c">
+    <ClCompile Include="main.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
