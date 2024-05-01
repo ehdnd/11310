@@ -91,26 +91,7 @@
 
 //#5-2도전실전예제 
 
-////////////////////////////
-
-////#6-5
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	int i;
-//	int sum = 0;
-//
-//	for (i = 1; i <= 10; i++)
-//	{
-//		sum += i;
-//		if (sum > 30) break;
-//	}
-//	printf("누적한 값: %d\n", sum);
-//	printf("마지막으로 더한 값: %d\n", i);
-//
-//	return 0;
-//}
+/////////////////////////////////////////////
 
 ////#6-2확인문제3
 //#include <stdio.h>
@@ -251,32 +232,7 @@
 //    return 0;
 //}
 
-
-////#7-1
-//#include <stdio.h>
-//
-//int sum(int x, int y);
-//
-//
-//int main(void)
-//{
-//	int a = 10, b = 20;
-//	int result;
-//
-//	result = sum(a, b);;
-//	printf("result: %d\n", result);
-//
-//	return 0;
-//}
-//
-//int sum(int x, int y)
-//{
-//	int temp;
-//
-//	temp = x + y;
-//
-//	return temp;
-//}
+/////////////////////////////////////////
 
 ////확인문제3
 //#include <stdio.h>
