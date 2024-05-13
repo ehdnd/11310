@@ -260,57 +260,6 @@
 
 ///////////////////////////////////////
 
-////확인문제2
-//#include <stdio.h>
-//
-//int sum(int num);
-//
-//int main(void)
-//{
-//	sum(10);
-//	sum(100);
-//
-//	return 0;
-//}
-//
-//int sum(int num)
-//{
-//	int i;
-//	int sum = 0;
-//
-//	for (i = 1; i <= num; i++)
-//	{
-//		sum += i;
-//	}
-//	printf("1부터 %d까지의 합은 %d입니다.\n", num, sum);
-//}
-
-////확인문제3
-//#include <stdio.h>
-//
-//int func(int n);
-//int poly(int n);
-//
-//int main(void)
-//{
-//	printf("%d\n", func(-3));
-//
-//	return 0;
-//}
-//
-//int func(int n)
-//{
-//	int res;
-//	res = poly(n);
-//	if (res >= 0) return res;
-//	else return -res;
-//}
-//
-//int poly(int n)
-//{
-//	return((2 * n * n) + (3 * n));
-//}
-
 ////도전문제
 //#include <stdio.h>
 //
@@ -333,222 +282,227 @@
 //
 //}
 
-////#8-1
+///////////////////////////////////
+
+////9-1
 //#include <stdio.h>
 //
 //int main(void)
 //{
-//	int ary[5];
+//	int a;
+//	double b;
+//	char c;
 //
-//	ary[0] = 10;
-//	ary[1] = 20;
-//	ary[2] = ary[0] + ary[1];
-//	scanf("%d", &ary[3]);
-//
-//	printf("%d\n", ary[2]);
-//	printf("%d\n", ary[3]);
-//	printf("%d\n", ary[4]);
+//	printf("int형 변수의 주소: %u\n", &a);
+//	printf("double형 변수의 주소: %u\n", &b);
+//	printf("char형 변수의 주소: %u\n", &c);
 //
 //	return 0;
 //}
 
-////#8-3
+////9-2
 //#include <stdio.h>
 //
 //int main(void)
 //{
-//	int score[5];
-//	int i;
-//	int total = 0;
+//	int a;
+//	int* pa;
+//
+//	pa = &a;
+//	*pa = 10;
+//
+//	printf("포인터로 a값 출력: %d\n", *pa);
+//	printf("변수명으로 a값 출력: %d\n", a);
+//
+//	return 0;
+//}
+
+////9-3
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//	int a = 10, b = 15, total;
 //	double avg;
+//	int* pa, * pb;
+//	int* pt = &total;
+//	double* pg = &avg;
 //
-//	for (i = 0; i < 5; i++)
-//	{
-//		scanf("%d", &score[i]);
-//	}
+//	pa = &a;
+//	pb = &b;
 //
-//	for (i = 0; i < 5; i++)
-//	{
-//		total += score[i];
-//	}
-//	avg = total / 5.0;
+//	*pt = *pa + *pb;
+//	*pg = *pt / 2.0;
 //
-//	for (i = 0; i < 5; i++)
-//	{
-//		printf("%5d", score[i]);
-//	}
-//	printf("\n");
-//
-//	printf("평균: %.1lf", avg);
+//	printf("두 정수의 값: %d, %d\n", *pa, *pb);
+//	printf("두 정수의 합: %d\n", *pt);
+//	printf("두 정수의 평균: %.1lf\n", *pg);
 //
 //	return 0;
 //}
 
-////#8-3
+////9-4
 //#include <stdio.h>
 //
 //int main(void)
 //{
-//	int score[5];
-//	int i;
-//	int total = 0;
-//	double avg;
-//	int count;
+//	int a = 10, b = 20;
+//	const int* pa = &a;
 //
-//	count = sizeof(score) / sizeof(score[0]);
-//
-//	for (i = 0; i < count; i++)
-//	{
-//		scanf("%d", &score[i]);
-//	}
-//
-//	for (i = 0; i < count; i++)
-//	{
-//		total += score[i];
-//	}
-//	avg = total / (double)count;
-//
-//	for (i = 0; i < count; i++)
-//	{
-//		printf("%5d", score[i]);
-//	}
-//	printf("\n");
-//
-//	printf("평균: %.1lf\n", avg);
+//	printf("변수 a값: %d\n", *pa);
+//	pa = &b;
+//	printf("변수 b값: %d\n", *pa);
+//	pa = &a;
+//	a = 20;
+//	printf("변수 a값: %d\n", *pa);
 //
 //	return 0;
 //}
 
-////#확인문제3
+////9-5
 //#include <stdio.h>
 //
 //int main(void)
 //{
-//	int A[3] = { 1, 2, 3 };
-//	int B[10];
-//	int i;
+//	char ch;
+//	int in;
+//	double db;
 //
-//	for (i = 0; i < 10; i++)
-//	{
-//		B[i] = (i % 3 + 1);
-//	}
+//	char* pc = &ch;
+//	int* pi = &in;
+//	double* pd = &db;
 //
-//	for (i = 0; i < 10; i++)
-//	{
-//		printf("%5d", B[i]);
-//	}
+//	printf("char형 변수의 주소 크기: %d\n", sizeof(&ch));
+//	printf("nt형 변수의 주소 크기: %d\n", sizeof(&in));
+//	printf("double형 변수의 주소 크기: %d\n", sizeof(&db));
+//
+//	printf("char * 포인터의 크기: %d\n", sizeof(pc));
+//	printf("int * 포인터의 크기: %d\n", sizeof(pi));
+//	printf("double * 포인터의 크기: %d\n", sizeof(pd));
+//
+//	printf("char * 포인터가 가리키는 변수의 크기: %d\n", sizeof(*pc));
+//	printf("int * 포인터가 가리키는 변수의 크기: %d\n", sizeof(*pi));
+//	printf("double * 포인터가 가리키는 변수의 크기: %d\n", sizeof(*pd));
 //
 //	return 0;
 //}
 
-////확인문제3_정답
+////9-6
 //#include <stdio.h>
 //
 //int main(void)
 //{
-//	int A[3] = { 1, 2, 3 };
-//	int B[10];
-//	int i;
+//	int a = 10;
+//	int* p = &a;
+//	double* pd;
 //
-//	for (i = 0; i < 10; i++)
-//	{
-//		B[i] = A[i % 3];
-//	}
-//
-//	for (i = 0; i < 10; i++)
-//	{
-//		printf("%5d", B[i]);
-//	}
+//	pd = p;
+//	printf("%lf\n", *pd);
 //
 //	return 0;
 //}
 
-////#8-4
+////9-7
 //#include <stdio.h>
+//
+//void swap(int* pa, int* pb);
 //
 //int main(void)
 //{
-//	char str[80] = "applejam";
+//	int a = 10, b = 20;
 //
-//	printf("최초 문자열: %s\n", str);
-//	printf("문자열 입력: ");
-//	scanf("%s", str);
-//	printf("입력후 문자열: %s\n", str);
-//
-//	return 0;
-
-////#8-5
-//#include <stdio.h>
-//#include <string.h>
-//
-//int main(void)
-//{
-//	char str1[80] = "cat";
-//	char str2[80];
-//
-//	strcpy(str1, "tiger");
-//	strcpy(str2, str1);
-//	printf("%s, %s\n", str1, str2);
+//	swap(&a, &b);
+//	printf("a: %d, b: %d\n", a, b);
 //
 //	return 0;
 //}
+//
+//void swap(int* pa, int* pb) {
+//	int temp;
+//
+//	temp = *pa;
+//	*pa = *pb;
+//	*pb = temp;
+//}
 
-////#8-6
+////9-8
 //#include <stdio.h>
+//
+//void swap(void);
 //
 //int main(void)
 //{
-//	char str[80];
+//	int a = 10, b = 20;
 //
-//	printf("문자열 입력: ");
-//	gets(str);
-//	puts("입력된 문자열: ");
-//	puts(str);
+//	swap();
+//	printf("a: %d, b: %d\n", a, b);
 //
 //	return 0;
 //}
+//
+//void swap() {
+//	int temp;
+//
+//	temp = a;
+//	a = b;
+//	b = temp;
+//}
 
-////#8-7
+////9-9
 //#include <stdio.h>
+//
+//void swap(int x, int y);
 //
 //int main(void)
 //{
-//	char str[5];
+//	int a = 10, b = 20;
 //
-//	str[0] = 'O';
-//	str[1] = 'K';
-//	printf("%s\n", str);
+//	swap(a, b);
+//	printf("a: %d, b: %d\n", a, b);
 //
 //	return 0;
 //}
+//
+//void swap(int x, int y) {
+//	int temp;
+//
+//	temp = x;
+//	x = y;
+//	y = temp;
+//}
 
-////#확인문제3
+////9-2도전실전예제_정답
 //#include <stdio.h>
-//#include <string.h>
+//
+//void swap(double* ap, double* bp);               // 두 실수를 바꾸는 함수
+//void line_up(double* maxp, double* midp, double* minp);  // 함수의 선언
 //
 //int main(void)
 //{
-//	char str1[80], str2[80];
-//	char temp[80];
-//	
-//	printf("두 문자열 입력: ");
-//	scanf("%s %s", str1, str2);
-//	printf("바꾸기 전: %s, %s\n", str1, str2);
-//	strcpy(temp, str1);
-//	strcpy(str1, str2);
-//	strcpy(str2, temp);
+//    double max, mid, min;
 //
-//	printf("바꾼 후: %s, %s\n", str1, str2);
+//    printf("실수값 세 개 입력 : ");
+//    scanf("%lf%lf%lf", &max, &mid, &min);
 //
-//	return 0;
+//    line_up(&max, &mid, &min);           // 세 변수의 값을 정렬하는 함수 호출
+//    printf("정렬된 값 출력 : %.1lf, %.1lf, %.1lf\n", max, mid, min);
+//
+//    return 0;
+//}
+//
+//void swap(double* ap, double* bp)
+//{
+//    double temp;
+//
+//    temp = *ap;
+//    *ap = *bp;
+//    *bp = temp;
+//}
+//
+//void line_up(double* maxp, double* midp, double* minp)
+//{
+//    if (*maxp < *midp) swap(maxp, midp);
+//    if (*maxp < *minp) swap(maxp, minp);
+//    if (*midp < *minp) swap(midp, minp);
 //}
 
-////도전실전예제
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//
-//
-//	return 0;
-//}
