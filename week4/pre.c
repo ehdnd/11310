@@ -284,225 +284,188 @@
 
 ///////////////////////////////////
 
-////9-1
+////#10-1
 //#include <stdio.h>
 //
 //int main(void)
 //{
-//	int a;
-//	double b;
-//	char c;
+//	int ary[3];
+//	int i;
 //
-//	printf("int형 변수의 주소: %u\n", &a);
-//	printf("double형 변수의 주소: %u\n", &b);
-//	printf("char형 변수의 주소: %u\n", &c);
+//	*(ary + 0) = 10;
+//	*(ary + 1) = *(ary + 0) + 10;
+//
+//	printf("세 번째 배열 요소에 키보드 입력: ");
+//	scanf("%d", ary + 2);
+//
+//	for (i = 0; i < 3; i++) {
+//		printf("%5d", *(ary + i));
+//	}
 //
 //	return 0;
 //}
 
-////9-2
+////#10-2
 //#include <stdio.h>
 //
 //int main(void)
 //{
-//	int a;
-//	int* pa;
+//	int ary[3];
+//	int* pa = ary;
+//	int i;
 //
-//	pa = &a;
 //	*pa = 10;
+//	*(pa + 1) = 20;
+//	pa[2] = pa[0] + pa[1];
 //
-//	printf("포인터로 a값 출력: %d\n", *pa);
-//	printf("변수명으로 a값 출력: %d\n", a);
-//
-//	return 0;
-//}
-
-////9-3
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	int a = 10, b = 15, total;
-//	double avg;
-//	int* pa, * pb;
-//	int* pt = &total;
-//	double* pg = &avg;
-//
-//	pa = &a;
-//	pb = &b;
-//
-//	*pt = *pa + *pb;
-//	*pg = *pt / 2.0;
-//
-//	printf("두 정수의 값: %d, %d\n", *pa, *pb);
-//	printf("두 정수의 합: %d\n", *pt);
-//	printf("두 정수의 평균: %.1lf\n", *pg);
+//	for (i = 0; i < 3; i++) {
+//		printf("%5d", pa[i]);
+//	}
 //
 //	return 0;
 //}
 
-////9-4
+////#10-3
 //#include <stdio.h>
 //
 //int main(void)
 //{
-//	int a = 10, b = 20;
-//	const int* pa = &a;
+//	int ary[3] = { 10, 20, 30 };
+//	int* pa = ary;
+//	int i;
 //
-//	printf("변수 a값: %d\n", *pa);
-//	pa = &b;
-//	printf("변수 b값: %d\n", *pa);
-//	pa = &a;
-//	a = 20;
-//	printf("변수 a값: %d\n", *pa);
+//	printf("배열의 값: ");
+//	for (i = 0; i < 3; i++) {
+//		printf("%5d", *pa);
+//		pa++;
+//	}
 //
 //	return 0;
 //}
 
-////9-5
+////#10-4
 //#include <stdio.h>
 //
 //int main(void)
 //{
-//	char ch;
-//	int in;
-//	double db;
+//	int ary[5] = { 10, 20, 30, 40, 50 };
+//	int* pa = ary;
+//	int* pb = pa + 3;
 //
-//	char* pc = &ch;
-//	int* pi = &in;
-//	double* pd = &db;
+//	printf("pa: %u\n", pa);
+//	printf("pb: %u\n", pb);
 //
-//	printf("char형 변수의 주소 크기: %d\n", sizeof(&ch));
-//	printf("nt형 변수의 주소 크기: %d\n", sizeof(&in));
-//	printf("double형 변수의 주소 크기: %d\n", sizeof(&db));
+//	pa++;
+//	printf("pb - pa: %u\n", pb - pa);
 //
-//	printf("char * 포인터의 크기: %d\n", sizeof(pc));
-//	printf("int * 포인터의 크기: %d\n", sizeof(pi));
-//	printf("double * 포인터의 크기: %d\n", sizeof(pd));
-//
-//	printf("char * 포인터가 가리키는 변수의 크기: %d\n", sizeof(*pc));
-//	printf("int * 포인터가 가리키는 변수의 크기: %d\n", sizeof(*pi));
-//	printf("double * 포인터가 가리키는 변수의 크기: %d\n", sizeof(*pd));
+//	printf("앞에 있는 배열 요소의 값 출력: ");
+//	if (pa < pb) printf("%d\n", *pa);
+//	else printf("%d\n", *pb);
 //
 //	return 0;
 //}
 
-////9-6
+////#10-1 확인문제 3
 //#include <stdio.h>
 //
 //int main(void)
 //{
-//	int a = 10;
-//	int* p = &a;
-//	double* pd;
+//	double ary[5] = { 1.2, 3.5, 7.4, 0.5, 10.0 };
+//	double* pa = ary;
+//	double* pb = ary + 2;
+//	int i;
 //
-//	pd = p;
-//	printf("%lf\n", *pd);
+//	for (i = 0; i < 3; i++) {
+//		printf("%.1lf ", *pb);
+//		pb++;
+//	}
 //
 //	return 0;
 //}
 
-////9-7
+////#10-5
 //#include <stdio.h>
 //
-//void swap(int* pa, int* pb);
+//void print_ary(int* pa);
 //
 //int main(void)
 //{
-//	int a = 10, b = 20;
+//	int ary[5] = { 10, 20, 30, 40, 50 };
 //
-//	swap(&a, &b);
-//	printf("a: %d, b: %d\n", a, b);
+//	print_ary(ary);
 //
 //	return 0;
 //}
 //
-//void swap(int* pa, int* pb) {
-//	int temp;
+//void print_ary(int* pa) {
+//	int i;
 //
-//	temp = *pa;
-//	*pa = *pb;
-//	*pb = temp;
+//	for (i = 0; i < 5; i++) {
+//		printf("%d ", pa[i]);
+//	}
 //}
 
-////9-8
+////#10-6
 //#include <stdio.h>
 //
-//void swap(void);
+//void print_ary(int* pa, int size);
 //
 //int main(void)
 //{
-//	int a = 10, b = 20;
+//	int ary1[5] = { 10, 20, 30, 40, 50 };
+//	int ary2[7] = { 10, 20, 30, 40, 50, 60, 70 };
 //
-//	swap();
-//	printf("a: %d, b: %d\n", a, b);
+//	print_ary(ary1, 5);
+//	printf("\n");
+//	print_ary(ary2, 7);
 //
 //	return 0;
 //}
 //
-//void swap() {
-//	int temp;
+//void print_ary(int* pa, int size) {
+//	int i;
 //
-//	temp = a;
-//	a = b;
-//	b = temp;
+//	for (i = 0; i < size; i++) {
+//		printf("%d ", pa[i]);
+//	}
 //}
 
-////9-9
-//#include <stdio.h>
-//
-//void swap(int x, int y);
-//
-//int main(void)
-//{
-//	int a = 10, b = 20;
-//
-//	swap(a, b);
-//	printf("a: %d, b: %d\n", a, b);
-//
-//	return 0;
-//}
-//
-//void swap(int x, int y) {
-//	int temp;
-//
-//	temp = x;
-//	x = y;
-//	y = temp;
-//}
+//#10-7
+#include <stdio.h>
 
-////9-2도전실전예제_정답
-//#include <stdio.h>
-//
-//void swap(double* ap, double* bp);               // 두 실수를 바꾸는 함수
-//void line_up(double* maxp, double* midp, double* minp);  // 함수의 선언
-//
-//int main(void)
-//{
-//    double max, mid, min;
-//
-//    printf("실수값 세 개 입력 : ");
-//    scanf("%lf%lf%lf", &max, &mid, &min);
-//
-//    line_up(&max, &mid, &min);           // 세 변수의 값을 정렬하는 함수 호출
-//    printf("정렬된 값 출력 : %.1lf, %.1lf, %.1lf\n", max, mid, min);
-//
-//    return 0;
-//}
-//
-//void swap(double* ap, double* bp)
-//{
-//    double temp;
-//
-//    temp = *ap;
-//    *ap = *bp;
-//    *bp = temp;
-//}
-//
-//void line_up(double* maxp, double* midp, double* minp)
-//{
-//    if (*maxp < *midp) swap(maxp, midp);
-//    if (*maxp < *minp) swap(maxp, minp);
-//    if (*midp < *minp) swap(midp, minp);
-//}
+void input_ary(double* pa, int size);
+double find_max(double* pa, int size);
 
+int main(void)
+{
+	double ary[5];
+	double max;
+	int size = sizeof(ary) / sizeof(ary[0]);
+
+	input_ary(ary, size);
+	max = find_max(ary, size);
+	printf("배열의 최댓값: %.1lf\n", max);
+
+	return 0;
+}
+
+void input_ary(double* pa, int size) {
+	int i;
+
+	printf("%d개의 실수값 입력: ", size);
+	for (i = 0; i < size; i++) {
+		scanf("%lf", pa + i);
+	}
+}
+
+double find_max(double* pa, int size) {
+	double max;
+	int i;
+
+	max = pa[0];
+	for (i = 1; i < size; i++) {
+		if (pa[i] > max) max = pa[i];
+	}
+
+	return max;
+}
