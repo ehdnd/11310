@@ -94,30 +94,47 @@
 //	return 0;
 //}
 
-//11-6
-#include <stdio.h>
+////11-6
+//#include <stdio.h>
+//
+//void my_gets(char* str, int size);
+//
+//int main(void)
+//{
+//	char str[7];
+//
+//	my_gets(str, sizeof(str));
+//	printf("입력한 문자열: &s\n", str);
+//
+//	return 0;
+//}
+//
+//void my_gets(char* str, int size) {
+//	int ch;
+//	int i = 0;
+//
+//	ch = getchar();
+//	while ((ch != '\n') && (i < size - 1)) {
+//		str[i] = ch;
+//		i++;
+//		ch = getchar();
+//	}
+//	str[i] = '\0';
+//}
 
-void my_gets(char* str, int size);
-
-int main(void)
-{
-	char str[7];
-
-	my_gets(str, sizeof(str));
-	printf("입력한 문자열: &s\n", str);
-
-	return 0;
-}
-
-void my_gets(char* str, int size) {
-	int ch;
-	int i = 0;
-
-	ch = getchar();
-	while ((ch != '\n') && (i < size - 1)) {
-		str[i] = ch;
-		i++;
-		ch = getchar();
-	}
-	str[i] = '\0';
-}
+////11-7
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//	int num, grade;
+//
+//	printf("학번 입력: ");
+//	scanf("%d", &num);
+//	getchar();
+//	printf("학점 입력: ");
+//	grade = getchar();
+//	printf("학번: %d, 학점: %c", num, grade);
+//
+//	return 0;
+//}
